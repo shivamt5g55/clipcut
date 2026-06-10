@@ -1,0 +1,6 @@
+{
+  "name": "ClipCut",
+  "description": "High-performance in-browser client-side video clip extractor styled for video creators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Bebas Neue", sans-serif;
+  
+  --color-brand-blue: #1a4aff;
+  --color-brand-blue-deep: #0033cc;
+  --color-accent-blue: #2060ff;
+  --color-accent-light: #4d88ff;
+  --color-cream-white: #ffffff;
+  --color-creator-dark: #03071a;
+  --color-creator-card: rgba(10, 21, 64, 0.8);
+  --color-creator-success: #00e676;
+}
+
+/* Custom background styles with subtle grid patterns for fintech cinematic theme */
+body {
+  background-color: #03071a;
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(26, 74, 255, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse at 80% 80%, rgba(0, 30, 120, 0.2) 0%, transparent 60%),
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: auto, auto, 40px 40px, 40px 40px;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+/* Glassy frosted card styling helper */
+.glass-panel {
+  background: rgba(10, 21, 64, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 
+    0 0 0 1px rgba(32, 96, 255, 0.1),
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Premium primary glowing button styling */
+.btn-primary-glow {
+  background: linear-gradient(135deg, #1a4aff, #0033cc);
+  color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  box-shadow:
+    0 0 30px rgba(26, 74, 255, 0.4),
+    0 0 60px rgba(26, 74, 255, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary-glow:hover {
+  box-shadow:
+    0 0 50px rgba(26, 74, 255, 0.6),
+    0 0 100px rgba(26, 74, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-primary-glow:active {
+  transform: translateY(0px);
+}
+
+/* Custom scrollbar to keep layout clean and modern */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #03071a;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(32, 96, 255, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(32, 96, 255, 0.45);
+}
